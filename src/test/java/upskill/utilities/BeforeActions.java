@@ -7,9 +7,9 @@ public class BeforeActions {
 	
 	@Before																//Before action will run before executing any scenario 
 	public void beforeActions(Scenario scen){							//Get cucumber scenario parameter for feature file name
-		System.out.print("--->>>> Initializing Driver....");			
+		System.out.println("--->>>> Initializing Driver....");			
 		SetupDrivers.setupDriver();										//Calling setup driver method to execute before scenario
-		System.out.print("Test Scenario Name : " + scen.getName());
+		System.out.println("Test Scenario Name : " + scen.getName());
 	}
 
 }
